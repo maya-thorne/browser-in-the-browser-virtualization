@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0714"/>
+      <stop offset="50%" stop-color="#120c22"/>
+      <stop offset="100%" stop-color="#080a14"/>
+    </linearGradient>
+    <linearGradient id="neonTitle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fb7185"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1000" height="540" rx="14" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="998" height="538" rx="13" fill="none" stroke="#3b1d54" stroke-width="1.5"/>
+
+  <!-- Title Header -->
+  <text x="40" y="44" fill="url(#neonTitle)" font-family="Consolas, monospace" font-size="20" font-weight="900" text-rendering="geometricPrecision">
+    DEFENSIVE COUNTERMEASURES &amp; MULTI-LAYER DETECTION TOPOLOGY
+  </text>
+  <text x="40" y="68" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" text-rendering="geometricPrecision">
+    HTTP Security Headers · DOM Boundary Traps · Heuristic Extensions · EDR Process Monitoring
+  </text>
+
+  <!-- 4 Defense Columns -->
+
+  <!-- Column 1: HTTP Headers -->
+  <rect x="40" y="95" width="215" height="405" rx="10" fill="#0d091a" stroke="#fb7185" stroke-width="1.4"/>
+  <text x="56" y="125" fill="#fb7185" font-family="Consolas, monospace" font-size="12" font-weight="700">1. HTTP HEADERS</text>
+  <text x="56" y="143" fill="#fda4af" font-family="Consolas, monospace" font-size="9.5">FRAME EMBED RESTRICTION</text>
+  <line x1="56" y1="153" x2="239" y2="153" stroke="#4c1d95" stroke-width="1"/>
+
+  <rect x="56" y="170" width="183" height="75" rx="6" fill="#1f0f24" stroke="#831843" stroke-width="1"/>
+  <text x="68" y="192" fill="#f43f5e" font-family="Consolas, monospace" font-size="11" font-weight="700">CSP frame-ancestors</text>
+  <text x="68" y="210" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">frame-ancestors 'none';</text>
+  <text x="68" y="226" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">Prevents iframe embed</text>
+
+  <rect x="56" y="257" width="183" height="75" rx="6" fill="#1f0f24" stroke="#831843" stroke-width="1"/>
+  <text x="68" y="279" fill="#f43f5e" font-family="Consolas, monospace" font-size="11" font-weight="700">X-Frame-Options</text>
+  <text x="68" y="297" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">DENY / SAMEORIGIN</text>
+  <text x="68" y="313" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">Legacy HTTP/1.1 defense</text>
+
+  <rect x="56" y="344" width="183" height="136" rx="6" fill="#140a18" stroke="#4c1d95" stroke-width="1"/>
+  <text x="68" y="366" fill="#fda4af" font-family="Consolas, monospace" font-size="11" font-weight="700">Auditing Engine</text>
+  <text x="68" y="384" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Automated validation via</text>
+  <text x="68" y="400" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">src/frame_security_auditor.py</text>
+  <text x="68" y="416" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Checks endpoint responses</text>
+  <text x="68" y="432" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Flags missing CSP policy</text>
+
+  <!-- Column 2: DOM Boundary Traps -->
+  <rect x="275" y="95" width="215" height="405" rx="10" fill="#0d091a" stroke="#f59e0b" stroke-width="1.4"/>
+  <text x="291" y="125" fill="#f59e0b" font-family="Consolas, monospace" font-size="12" font-weight="700">2. DOM BOUNDARY TRAPS</text>
+  <text x="291" y="143" fill="#fcd34d" font-family="Consolas, monospace" font-size="9.5">GEOMETRIC CONTAINMENT</text>
+  <line x1="291" y1="153" x2="474" y2="153" stroke="#4c1d95" stroke-width="1"/>
+
+  <rect x="291" y="170" width="183" height="75" rx="6" fill="#241a08" stroke="#b45309" stroke-width="1"/>
+  <text x="303" y="192" fill="#fbbf24" font-family="Consolas, monospace" font-size="11" font-weight="700">Frame-Busting Scripts</text>
+  <text x="303" y="210" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">if (top !== self) {</text>
+  <text x="303" y="226" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">  top.location = self.loc;</text>
+
+  <rect x="291" y="257" width="183" height="75" rx="6" fill="#241a08" stroke="#b45309" stroke-width="1"/>
+  <text x="303" y="279" fill="#fbbf24" font-family="Consolas, monospace" font-size="11" font-weight="700">Viewport Drag Limits</text>
+  <text x="303" y="297" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">Detects popup trapped</text>
+  <text x="303" y="313" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">in window.innerWidth</text>
+
+  <rect x="291" y="344" width="183" height="136" rx="6" fill="#181105" stroke="#4c1d95" stroke-width="1"/>
+  <text x="303" y="366" fill="#fcd34d" font-family="Consolas, monospace" font-size="11" font-weight="700">Physical Discrepancy</text>
+  <text x="303" y="384" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Real OS windows move</text>
+  <text x="303" y="400" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">across screens; BITB</text>
+  <text x="303" y="416" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">clips at viewport edge.</text>
+  <text x="303" y="432" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Math proven in emulator.</text>
+
+  <!-- Column 3: Extension Heuristics -->
+  <rect x="510" y="95" width="215" height="405" rx="10" fill="#0d091a" stroke="#38bdf8" stroke-width="1.4"/>
+  <text x="526" y="125" fill="#38bdf8" font-family="Consolas, monospace" font-size="12" font-weight="700">3. EXTENSION SCANNERS</text>
+  <text x="526" y="143" fill="#7dd3fc" font-family="Consolas, monospace" font-size="9.5">CLIENT-SIDE HEURISTICS</text>
+  <line x1="526" y1="153" x2="709" y2="153" stroke="#4c1d95" stroke-width="1"/>
+
+  <rect x="526" y="170" width="183" height="75" rx="6" fill="#081b2e" stroke="#0284c7" stroke-width="1"/>
+  <text x="538" y="192" fill="#38bdf8" font-family="Consolas, monospace" font-size="11" font-weight="700">MutationObserver</text>
+  <text x="538" y="210" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">Monitors dynamic DOM</text>
+  <text x="538" y="226" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">injection of #title-bar</text>
+
+  <rect x="526" y="257" width="183" height="75" rx="6" fill="#081b2e" stroke="#0284c7" stroke-width="1"/>
+  <text x="538" y="279" fill="#38bdf8" font-family="Consolas, monospace" font-size="11" font-weight="700">Fake Padlock Detection</text>
+  <text x="538" y="297" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">Flags SSL SVG assets</text>
+  <text x="538" y="313" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">rendered inside body</text>
+
+  <rect x="526" y="344" width="183" height="136" rx="6" fill="#081b2e" stroke="#4c1d95" stroke-width="1"/>
+  <text x="538" y="366" fill="#7dd3fc" font-family="Consolas, monospace" font-size="11" font-weight="700">Domain Consistency</text>
+  <text x="538" y="384" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Compares inner text</text>
+  <text x="538" y="400" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">(e.g., google.com) with</text>
+  <text x="538" y="416" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">window.location.hostname</text>
+  <text x="538" y="432" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Mismatch = 100% Phish.</text>
+
+  <!-- Column 4: EDR & SIEM -->
+  <rect x="745" y="95" width="215" height="405" rx="10" fill="#0d091a" stroke="#34d399" stroke-width="1.4"/>
+  <text x="761" y="125" fill="#34d399" font-family="Consolas, monospace" font-size="12" font-weight="700">4. EDR &amp; SIEM RULES</text>
+  <text x="761" y="143" fill="#86efac" font-family="Consolas, monospace" font-size="9.5">HOST PROCESS TELEMETRY</text>
+  <line x1="761" y1="153" x2="944" y2="153" stroke="#4c1d95" stroke-width="1"/>
+
+  <rect x="761" y="170" width="183" height="75" rx="6" fill="#06281e" stroke="#059669" stroke-width="1"/>
+  <text x="773" y="192" fill="#34d399" font-family="Consolas, monospace" font-size="11" font-weight="700">Sysmon Event ID 1</text>
+  <text x="773" y="210" fill="#a7f3d0" font-family="Consolas, monospace" font-size="9.5">Process Creation tracking</text>
+  <text x="773" y="226" fill="#a7f3d0" font-family="Consolas, monospace" font-size="9.5">Matches --app flag in CLI</text>
+
+  <rect x="761" y="257" width="183" height="75" rx="6" fill="#06281e" stroke="#059669" stroke-width="1"/>
+  <text x="773" y="279" fill="#34d399" font-family="Consolas, monospace" font-size="11" font-weight="700">LNK Forensics</text>
+  <text x="773" y="297" fill="#a7f3d0" font-family="Consolas, monospace" font-size="9.5">Shortcut target telemetry</text>
+  <text x="773" y="313" fill="#a7f3d0" font-family="Consolas, monospace" font-size="9.5">Flags browser LNK in Drop</text>
+
+  <rect x="761" y="344" width="183" height="136" rx="6" fill="#06281e" stroke="#4c1d95" stroke-width="1"/>
+  <text x="773" y="366" fill="#86efac" font-family="Consolas, monospace" font-size="11" font-weight="700">Sigma Detection Rule</text>
+  <text x="773" y="384" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Title: Chromium App Mode</text>
+  <text x="773" y="400" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Condition: selection_app</text>
+  <text x="773" y="416" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">and selection_incognito</text>
+  <text x="773" y="432" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Level: high</text>
+</svg>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0714"/>
+      <stop offset="50%" stop-color="#120c22"/>
+      <stop offset="100%" stop-color="#080a14"/>
+    </linearGradient>
+    <linearGradient id="neonTitle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fb7185"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1000" height="540" rx="14" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="998" height="538" rx="13" fill="none" stroke="#3b1d54" stroke-width="1.5"/>
+
+  <!-- Title Header -->
+  <text x="40" y="44" fill="url(#neonTitle)" font-family="Consolas, monospace" font-size="20" font-weight="900" text-rendering="geometricPrecision">
+    BROWSER-IN-THE-BROWSER (BITB) DOM VIRTUALIZATION ARCHITECTURE
+  </text>
+  <text x="40" y="68" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" text-rendering="geometricPrecision">
+    Synthetic Chrome Injection · DOM Window Stacking · Draggable Physics · Iframe Sandboxing
+  </text>
+
+  <!-- 3 Architectural Columns -->
+
+  <!-- Column 1: Host Web Page (Parent DOM) -->
+  <rect x="40" y="95" width="290" height="405" rx="10" fill="#0d091a" stroke="#fb7185" stroke-width="1.4"/>
+  <text x="56" y="125" fill="#fb7185" font-family="Consolas, monospace" font-size="13" font-weight="700">LAYER 1: HOST PARENT DOM</text>
+  <text x="56" y="143" fill="#fda4af" font-family="Consolas, monospace" font-size="10">TRIGGER &amp; STACKING CONTEXT</text>
+  <line x1="56" y1="153" x2="314" y2="153" stroke="#4c1d95" stroke-width="1"/>
+
+  <rect x="56" y="170" width="258" height="60" rx="6" fill="#1f0f24" stroke="#831843" stroke-width="1"/>
+  <text x="68" y="192" fill="#f43f5e" font-family="Consolas, monospace" font-size="11" font-weight="700">Host HTML Viewport</text>
+  <text x="68" y="212" fill="#cbd5e1" font-family="Consolas, monospace" font-size="10">Relative/Static Base (z-index: 1)</text>
+
+  <rect x="56" y="242" width="258" height="60" rx="6" fill="#1f0f24" stroke="#831843" stroke-width="1"/>
+  <text x="68" y="264" fill="#f43f5e" font-family="Consolas, monospace" font-size="11" font-weight="700">OAuth Phishing Trigger</text>
+  <text x="68" y="284" fill="#cbd5e1" font-family="Consolas, monospace" font-size="10">"Sign in with Google" Button Event</text>
+
+  <rect x="56" y="314" width="258" height="60" rx="6" fill="#1f0f24" stroke="#831843" stroke-width="1"/>
+  <text x="68" y="336" fill="#f43f5e" font-family="Consolas, monospace" font-size="11" font-weight="700">Suppressed window.open()</text>
+  <text x="68" y="356" fill="#cbd5e1" font-family="Consolas, monospace" font-size="10">Zero native popup window spawned</text>
+
+  <rect x="56" y="386" width="258" height="90" rx="6" fill="#140a18" stroke="#4c1d95" stroke-width="1"/>
+  <text x="68" y="408" fill="#fda4af" font-family="Consolas, monospace" font-size="11" font-weight="700">Physical Limitation</text>
+  <text x="68" y="426" fill="#94a3b8" font-family="Consolas, monospace" font-size="10">Synthetic window is strictly trapped</text>
+  <text x="68" y="444" fill="#94a3b8" font-family="Consolas, monospace" font-size="10">inside document.body boundaries</text>
+  <text x="68" y="462" fill="#94a3b8" font-family="Consolas, monospace" font-size="10">Cannot cross monitor displays</text>
+
+  <!-- Column 2: Virtual Window Container (#window) -->
+  <rect x="355" y="95" width="290" height="405" rx="10" fill="#0d091a" stroke="#f59e0b" stroke-width="1.4"/>
+  <text x="371" y="125" fill="#f59e0b" font-family="Consolas, monospace" font-size="13" font-weight="700">LAYER 2: VIRTUAL WINDOW (#window)</text>
+  <text x="371" y="143" fill="#fcd34d" font-family="Consolas, monospace" font-size="10">SYNTHETIC BROWSER CHROME</text>
+  <line x1="371" y1="153" x2="629" y2="153" stroke="#4c1d95" stroke-width="1"/>
+
+  <rect x="371" y="170" width="258" height="60" rx="6" fill="#241a08" stroke="#b45309" stroke-width="1"/>
+  <text x="383" y="192" fill="#fbbf24" font-family="Consolas, monospace" font-size="11" font-weight="700">Title Bar (#title-bar)</text>
+  <text x="383" y="212" fill="#cbd5e1" font-family="Consolas, monospace" font-size="10">SVG Logo + Minimize / Max / Close</text>
+
+  <rect x="371" y="242" width="258" height="60" rx="6" fill="#241a08" stroke="#b45309" stroke-width="1"/>
+  <text x="383" y="264" fill="#fbbf24" font-family="Consolas, monospace" font-size="11" font-weight="700">Fake Omnibox (#url-bar)</text>
+  <text x="383" y="284" fill="#cbd5e1" font-family="Consolas, monospace" font-size="10">SSL Lock SVG + Spoofed Domain text</text>
+
+  <rect x="371" y="314" width="258" height="60" rx="6" fill="#241a08" stroke="#b45309" stroke-width="1"/>
+  <text x="383" y="336" fill="#fbbf24" font-family="Consolas, monospace" font-size="11" font-weight="700">Iframe Viewport (&lt;iframe&gt;)</text>
+  <text x="383" y="356" fill="#cbd5e1" font-family="Consolas, monospace" font-size="10">Target Auth Form (id="content")</text>
+
+  <rect x="371" y="386" width="258" height="90" rx="6" fill="#181105" stroke="#4c1d95" stroke-width="1"/>
+  <text x="383" y="408" fill="#fcd34d" font-family="Consolas, monospace" font-size="11" font-weight="700">CSS Elevation Model</text>
+  <text x="383" y="426" fill="#94a3b8" font-family="Consolas, monospace" font-size="10">position: absolute; z-index: 9999</text>
+  <text x="383" y="444" fill="#94a3b8" font-family="Consolas, monospace" font-size="10">top: 15%; left: 30%; width: 40%</text>
+  <text x="383" y="462" fill="#94a3b8" font-family="Consolas, monospace" font-size="10">box-shadow: 0 10px 30px rgba(0,0,0,0.5)</text>
+
+  <!-- Column 3: Event Engine & Defense -->
+  <rect x="670" y="95" width="290" height="405" rx="10" fill="#0d091a" stroke="#38bdf8" stroke-width="1.4"/>
+  <text x="686" y="125" fill="#38bdf8" font-family="Consolas, monospace" font-size="13" font-weight="700">LAYER 3: SCRIPT ENGINE &amp; DEFENSE</text>
+  <text x="686" y="143" fill="#7dd3fc" font-family="Consolas, monospace" font-size="10">DRAGGABLE MATH &amp; CSP CONTROLS</text>
+  <line x1="686" y1="153" x2="944" y2="153" stroke="#4c1d95" stroke-width="1"/>
+
+  <rect x="686" y="170" width="258" height="60" rx="6" fill="#081b2e" stroke="#0284c7" stroke-width="1"/>
+  <text x="698" y="192" fill="#38bdf8" font-family="Consolas, monospace" font-size="11" font-weight="700">Draggable Coordinate Physics</text>
+  <text x="698" y="212" fill="#cbd5e1" font-family="Consolas, monospace" font-size="10">mousedown ➔ mousemove ➔ mouseup</text>
+
+  <rect x="686" y="242" width="258" height="60" rx="6" fill="#081b2e" stroke="#0284c7" stroke-width="1"/>
+  <text x="698" y="264" fill="#38bdf8" font-family="Consolas, monospace" font-size="11" font-weight="700">Window Controls State Machine</text>
+  <text x="698" y="284" fill="#cbd5e1" font-family="Consolas, monospace" font-size="10">Resize 40% ➔ 70% (class="enlarged")</text>
+
+  <rect x="686" y="314" width="258" height="60" rx="6" fill="#06281e" stroke="#059669" stroke-width="1"/>
+  <text x="698" y="336" fill="#34d399" font-family="Consolas, monospace" font-size="11" font-weight="700">CSP frame-ancestors: 'none'</text>
+  <text x="698" y="356" fill="#a7f3d0" font-family="Consolas, monospace" font-size="10">100% blocks iframe authentication embed</text>
+
+  <rect x="686" y="386" width="258" height="90" rx="6" fill="#081b2e" stroke="#4c1d95" stroke-width="1"/>
+  <text x="698" y="408" fill="#7dd3fc" font-family="Consolas, monospace" font-size="11" font-weight="700">Heuristic Detection Vector</text>
+  <text x="698" y="426" fill="#94a3b8" font-family="Consolas, monospace" font-size="10">Scans for synthetic Omnibox elements</text>
+  <text x="698" y="444" fill="#94a3b8" font-family="Consolas, monospace" font-size="10">Checks drag offsets vs viewport bounds</text>
+  <text x="698" y="462" fill="#94a3b8" font-family="Consolas, monospace" font-size="10">Automated by src/bitb_detector.py</text>
+</svg>

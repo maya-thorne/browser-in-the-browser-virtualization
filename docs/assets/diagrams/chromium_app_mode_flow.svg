@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0714"/>
+      <stop offset="50%" stop-color="#140e26"/>
+      <stop offset="100%" stop-color="#090a16"/>
+    </linearGradient>
+    <linearGradient id="neonTitle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fb7185"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1000" height="500" rx="14" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="998" height="498" rx="13" fill="none" stroke="#3b1d54" stroke-width="1.5"/>
+
+  <!-- Title Header -->
+  <text x="40" y="44" fill="url(#neonTitle)" font-family="Consolas, monospace" font-size="20" font-weight="900" text-rendering="geometricPrecision">
+    CHROMIUM --app MODE INTERFACE STRIPPING &amp; SPOOFING PIPELINE
+  </text>
+  <text x="40" y="68" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" text-rendering="geometricPrecision">
+    Shortcut Execution · Native UI Elimination · Synthetic Omnibox Injection · Process Telemetry
+  </text>
+
+  <!-- 4 Sequential Stages -->
+
+  <!-- Stage 1 -->
+  <rect x="40" y="95" width="210" height="365" rx="10" fill="#0d091a" stroke="#fb7185" stroke-width="1.4"/>
+  <text x="56" y="125" fill="#fb7185" font-family="Consolas, monospace" font-size="13" font-weight="700">STAGE 1: EXECUTION</text>
+  <text x="56" y="143" fill="#fda4af" font-family="Consolas, monospace" font-size="10">LNK SHORTCUT LAUNCH</text>
+  <line x1="56" y1="153" x2="234" y2="153" stroke="#4c1d95" stroke-width="1"/>
+
+  <rect x="56" y="170" width="178" height="65" rx="6" fill="#1f0f24" stroke="#831843" stroke-width="1"/>
+  <text x="68" y="192" fill="#f43f5e" font-family="Consolas, monospace" font-size="11" font-weight="700">LNK Target Config</text>
+  <text x="68" y="210" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">brave.exe --app=[URL]</text>
+  <text x="68" y="226" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">-incognito flag appended</text>
+
+  <rect x="56" y="247" width="178" height="65" rx="6" fill="#1f0f24" stroke="#831843" stroke-width="1"/>
+  <text x="68" y="269" fill="#f43f5e" font-family="Consolas, monospace" font-size="11" font-weight="700">Icon Masquerading</text>
+  <text x="68" y="287" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">teams.ico / word.ico</text>
+  <text x="68" y="303" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">Disguised as Office tool</text>
+
+  <rect x="56" y="324" width="178" height="116" rx="6" fill="#140a18" stroke="#4c1d95" stroke-width="1"/>
+  <text x="68" y="346" fill="#fda4af" font-family="Consolas, monospace" font-size="11" font-weight="700">Process Spawning</text>
+  <text x="68" y="364" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Chromium engine parses</text>
+  <text x="68" y="380" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">--app command line</text>
+  <text x="68" y="396" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Spawns App Window</text>
+  <text x="68" y="412" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Zero browser tabs</text>
+
+  <!-- Stage 2 -->
+  <rect x="280" y="95" width="210" height="365" rx="10" fill="#0d091a" stroke="#f59e0b" stroke-width="1.4"/>
+  <text x="296" y="125" fill="#f59e0b" font-family="Consolas, monospace" font-size="13" font-weight="700">STAGE 2: STRIPPING</text>
+  <text x="296" y="143" fill="#fcd34d" font-family="Consolas, monospace" font-size="10">CHROME UI ELIMINATION</text>
+  <line x1="296" y1="153" x2="474" y2="153" stroke="#4c1d95" stroke-width="1"/>
+
+  <rect x="296" y="170" width="178" height="65" rx="6" fill="#241a08" stroke="#b45309" stroke-width="1"/>
+  <text x="308" y="192" fill="#fbbf24" font-family="Consolas, monospace" font-size="11" font-weight="700">Omnibox Stripped</text>
+  <text x="308" y="210" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">Address bar hidden (0%)</text>
+  <text x="308" y="226" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">Domain visibility gone</text>
+
+  <rect x="296" y="247" width="178" height="65" rx="6" fill="#241a08" stroke="#b45309" stroke-width="1"/>
+  <text x="308" y="269" fill="#fbbf24" font-family="Consolas, monospace" font-size="11" font-weight="700">Tab Strip Disabled</text>
+  <text x="308" y="287" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">Single-view boundary</text>
+  <text x="308" y="303" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">No multi-tab switching</text>
+
+  <rect x="296" y="324" width="178" height="116" rx="6" fill="#181105" stroke="#4c1d95" stroke-width="1"/>
+  <text x="308" y="346" fill="#fcd34d" font-family="Consolas, monospace" font-size="11" font-weight="700">Extensions Hidden</text>
+  <text x="308" y="364" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Password manager icons</text>
+  <text x="308" y="380" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">and phishing warning</text>
+  <text x="308" y="396" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">extensions suppressed</text>
+  <text x="308" y="412" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Zero UI feedback</text>
+
+  <!-- Stage 3 -->
+  <rect x="520" y="95" width="210" height="365" rx="10" fill="#0d091a" stroke="#38bdf8" stroke-width="1.4"/>
+  <text x="536" y="125" fill="#38bdf8" font-family="Consolas, monospace" font-size="13" font-weight="700">STAGE 3: INJECTION</text>
+  <text x="536" y="143" fill="#7dd3fc" font-family="Consolas, monospace" font-size="10">SYNTHETIC ADDRESS BAR</text>
+  <line x1="536" y1="153" x2="714" y2="153" stroke="#4c1d95" stroke-width="1"/>
+
+  <rect x="536" y="170" width="178" height="65" rx="6" fill="#081b2e" stroke="#0284c7" stroke-width="1"/>
+  <text x="548" y="192" fill="#38bdf8" font-family="Consolas, monospace" font-size="11" font-weight="700">Fake Address Bar</text>
+  <text x="548" y="210" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">CSS positioned &lt;div&gt;</text>
+  <text x="548" y="226" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">Draws green SSL lock</text>
+
+  <rect x="536" y="247" width="178" height="65" rx="6" fill="#081b2e" stroke="#0284c7" stroke-width="1"/>
+  <text x="548" y="269" fill="#38bdf8" font-family="Consolas, monospace" font-size="11" font-weight="700">Pixel-Perfect Modal</text>
+  <text x="548" y="287" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">Segoe UI system font</text>
+  <text x="548" y="303" fill="#cbd5e1" font-family="Consolas, monospace" font-size="9.5">440x520px Teams login</text>
+
+  <rect x="536" y="324" width="178" height="116" rx="6" fill="#081b2e" stroke="#4c1d95" stroke-width="1"/>
+  <text x="548" y="346" fill="#7dd3fc" font-family="Consolas, monospace" font-size="11" font-weight="700">Visual Deception</text>
+  <text x="548" y="364" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Victim assumes window</text>
+  <text x="548" y="380" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">is native Windows client</text>
+  <text x="548" y="396" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Submits credentials</text>
+  <text x="548" y="412" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">into remote collector</text>
+
+  <!-- Stage 4 -->
+  <rect x="760" y="95" width="200" height="365" rx="10" fill="#0d091a" stroke="#34d399" stroke-width="1.4"/>
+  <text x="776" y="125" fill="#34d399" font-family="Consolas, monospace" font-size="13" font-weight="700">STAGE 4: DETECTION</text>
+  <text x="776" y="143" fill="#86efac" font-family="Consolas, monospace" font-size="10">EDR &amp; TELEMETRY</text>
+  <line x1="776" y1="153" x2="944" y2="153" stroke="#4c1d95" stroke-width="1"/>
+
+  <rect x="776" y="170" width="168" height="65" rx="6" fill="#06281e" stroke="#059669" stroke-width="1"/>
+  <text x="788" y="192" fill="#34d399" font-family="Consolas, monospace" font-size="11" font-weight="700">Sysmon Event ID 1</text>
+  <text x="788" y="210" fill="#a7f3d0" font-family="Consolas, monospace" font-size="9.5">CommandLine flag match</text>
+  <text x="788" y="226" fill="#a7f3d0" font-family="Consolas, monospace" font-size="9.5">Parent: explorer.exe</text>
+
+  <rect x="776" y="247" width="168" height="65" rx="6" fill="#06281e" stroke="#059669" stroke-width="1"/>
+  <text x="788" y="269" fill="#34d399" font-family="Consolas, monospace" font-size="11" font-weight="700">Sigma Rule Match</text>
+  <text x="788" y="287" fill="#a7f3d0" font-family="Consolas, monospace" font-size="9.5">proc_creation_app_flag</text>
+  <text x="788" y="303" fill="#a7f3d0" font-family="Consolas, monospace" font-size="9.5">Threat Level: High</text>
+
+  <rect x="776" y="324" width="168" height="116" rx="6" fill="#06281e" stroke="#4c1d95" stroke-width="1"/>
+  <text x="788" y="346" fill="#86efac" font-family="Consolas, monospace" font-size="11" font-weight="700">EDR Interception</text>
+  <text x="788" y="364" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">Detects browser engine</text>
+  <text x="788" y="380" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">spawned from LNK</text>
+  <text x="788" y="396" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">containing external</text>
+  <text x="788" y="412" fill="#94a3b8" font-family="Consolas, monospace" font-size="9.5">phishing target URL</text>
+</svg>

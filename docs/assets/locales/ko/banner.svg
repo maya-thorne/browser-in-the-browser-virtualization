@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0714"/>
+      <stop offset="50%" stop-color="#140d28"/>
+      <stop offset="100%" stop-color="#060812"/>
+    </linearGradient>
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fb7185"/>
+      <stop offset="35%" stop-color="#f59e0b"/>
+      <stop offset="70%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1035"/>
+      <stop offset="100%" stop-color="#0d091a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Banner Background -->
+  <rect width="1200" height="420" rx="16" fill="url(#bannerBg)"/>
+  <rect x="1" y="1" width="1198" height="418" rx="15" fill="none" stroke="#3b1d54" stroke-width="1.8"/>
+
+  <!-- Top Terminal Bar -->
+  <rect width="1200" height="38" rx="16" fill="#180e29"/>
+  <rect y="26" width="1200" height="12" fill="#180e29"/>
+  <circle cx="24" cy="19" r="6" fill="#ef4444"/>
+  <circle cx="44" cy="19" r="6" fill="#f59e0b"/>
+  <circle cx="64" cy="19" r="6" fill="#10b981"/>
+  <text x="600" y="24" fill="#94a3b8" font-family="Consolas, monospace" font-size="12" text-anchor="middle" font-weight="600">
+    maya-thorne/browser-in-the-browser-virtualization &mdash; Systems &amp; Security Research Lab
+  </text>
+
+  <!-- Main Hero Title -->
+  <text x="60" y="115" fill="url(#neonGlow)" font-family="Consolas, monospace" font-size="34" font-weight="900" letter-spacing="-0.5" text-rendering="geometricPrecision">
+    BROWSER-IN-THE-BROWSER (BITB) &amp; APP-MODE FORENSICS
+  </text>
+  <text x="60" y="148" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="500">
+    DOM Virtualization Mechanics · Chromium --app UI Stripping · Heuristic Detection · Defense Engineering
+  </text>
+
+  <!-- 4 Feature Metric Cards -->
+  <!-- Card 1 -->
+  <rect x="60" y="185" width="250" height="180" rx="10" fill="url(#boxGrad)" stroke="#fb7185" stroke-width="1.2"/>
+  <text x="80" y="215" fill="#fb7185" font-family="Consolas, monospace" font-size="13" font-weight="700">🔬 BITB ARCHITECTURE</text>
+  <text x="80" y="240" fill="#f1f5f9" font-family="Consolas, monospace" font-size="18" font-weight="900">DOM VIRTUALIZATION</text>
+  <text x="80" y="265" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">
+    Simulated window frame, fake Omnibox with SSL lock, and draggable coordinate physics.
+  </text>
+  <text x="80" y="340" fill="#fb7185" font-family="Consolas, monospace" font-size="11" font-weight="600">5 OS/Theme Templates</text>
+
+  <!-- Card 2 -->
+  <rect x="335" y="185" width="250" height="180" rx="10" fill="url(#boxGrad)" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="355" y="215" fill="#f59e0b" font-family="Consolas, monospace" font-size="13" font-weight="700">⚙️ CHROMIUM --app</text>
+  <text x="355" y="240" fill="#f1f5f9" font-family="Consolas, monospace" font-size="18" font-weight="900">UI STRIPPING &amp; LNK</text>
+  <text x="355" y="265" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">
+    Suppresses Omnibox, tab strip &amp; extensions; masks process trees with desktop shortcuts.
+  </text>
+  <text x="355" y="340" fill="#f59e0b" font-family="Consolas, monospace" font-size="11" font-weight="600">4 PoC Shortcut Analyses</text>
+
+  <!-- Card 3 -->
+  <rect x="610" y="185" width="250" height="180" rx="10" fill="url(#boxGrad)" stroke="#38bdf8" stroke-width="1.2"/>
+  <text x="630" y="215" fill="#38bdf8" font-family="Consolas, monospace" font-size="13" font-weight="700">🛡️ DEFENSE CONTROLS</text>
+  <text x="630" y="240" fill="#f1f5f9" font-family="Consolas, monospace" font-size="18" font-weight="900">CSP FRAME-ANCESTORS</text>
+  <text x="630" y="265" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">
+    Anti-framing headers, window.top validation, and viewport boundary anomaly traps.
+  </text>
+  <text x="630" y="340" fill="#38bdf8" font-family="Consolas, monospace" font-size="11" font-weight="600">Automated Audit Suite</text>
+
+  <!-- Card 4 -->
+  <rect x="885" y="185" width="255" height="180" rx="10" fill="url(#boxGrad)" stroke="#34d399" stroke-width="1.2"/>
+  <text x="905" y="215" fill="#34d399" font-family="Consolas, monospace" font-size="13" font-weight="700">📊 DETECTION ENGINE</text>
+  <text x="905" y="240" fill="#f1f5f9" font-family="Consolas, monospace" font-size="18" font-weight="900">HEURISTIC SCANNERS</text>
+  <text x="905" y="265" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">
+    Static DOM AST analyzer, fake SSL indicator detection, and Sysmon/Sigma telemetry rules.
+  </text>
+  <text x="905" y="340" fill="#34d399" font-family="Consolas, monospace" font-size="11" font-weight="600">100% Verified Tests</text>
+
+  <!-- Footer Tag -->
+  <text x="60" y="398" fill="#64748b" font-family="Consolas, monospace" font-size="11">
+    Engineered &amp; Audited by Maya Thorne &bull; Dual-Use Security Research &bull; MT-SRL License &bull; v1.0.0
+  </text>
+</svg>

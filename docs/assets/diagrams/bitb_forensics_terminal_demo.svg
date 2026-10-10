@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0714"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </linearGradient>
+    <style>
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      .cursor { animation: blink 1s infinite; fill: #38bdf8; }
+      .prompt { fill: #f59e0b; font-weight: bold; }
+      .cmd { fill: #f1f5f9; font-weight: 600; }
+      .log { fill: #94a3b8; }
+      .success { fill: #34d399; font-weight: bold; }
+      .danger { fill: #ef4444; font-weight: bold; }
+      .highlight { fill: #fb7185; }
+    </style>
+  </defs>
+
+  <rect width="900" height="420" rx="10" fill="url(#termBg)" stroke="#3b1d54" stroke-width="1.5"/>
+
+  <!-- Window Header -->
+  <rect width="900" height="32" rx="10" fill="#180e29"/>
+  <circle cx="20" cy="16" r="5" fill="#f43f5e"/>
+  <circle cx="36" cy="16" r="5" fill="#f59e0b"/>
+  <circle cx="52" cy="16" r="5" fill="#10b981"/>
+  <text x="450" y="21" fill="#cbd5e1" font-family="Consolas, monospace" font-size="11" text-anchor="middle" font-weight="600">
+    browser-in-the-browser-virtualization :: BITB Forensic Analysis Console
+  </text>
+
+  <!-- Terminal Content with Absolute Y Positions -->
+  <g font-family="Consolas, monospace" font-size="12">
+    <text x="24" y="58"><tspan class="prompt">maya@lab:~$</tspan> <tspan class="cmd">python src/bitb_detector.py --path references/bitb_templates/windows_chrome_dark/index.html</tspan></text>
+    
+    <text x="24" y="86" fill="#64748b">======================================================================================</text>
+    <text x="24" y="106"><tspan fill="#fb7185">🔬 BITB HEURISTIC DETECTION REPORT</tspan> <tspan fill="#cbd5e1">:: Client-Side DOM Virtualization</tspan></text>
+    <text x="24" y="126" fill="#64748b">======================================================================================</text>
+    
+    <text x="24" y="152" class="log">Target File : <tspan fill="#f1f5f9">references/bitb_templates/windows_chrome_dark/index.html</tspan></text>
+    <text x="24" y="174" class="log">Risk Score  : <tspan class="danger">100 / 100 [CRITICAL (CONFIRMED BITB)]</tspan></text>
+    <text x="24" y="196" class="log">OS Flavor   : <tspan fill="#38bdf8">Windows (Chrome Dark Theme Emulation)</tspan></text>
+    <text x="24" y="218" class="log">Fake Bar    : <tspan class="danger">YES (#url-bar, #domain-name, #ssl-padlock)</tspan></text>
+    <text x="24" y="240" class="log">Draggable   : <tspan fill="#f59e0b">YES (mousedown ➔ mousemove physics on #title-bar)</tspan></text>
+    <text x="24" y="262" class="log">Iframe Auth : <tspan class="danger">YES (&lt;iframe id="content" src="XX-PHISHING-LINK-XX"&gt;)</tspan></text>
+    <text x="24" y="284" fill="#64748b">======================================================================================</text>
+    
+    <text x="24" y="310" fill="#a855f7">--- [Heuristic Rules Triggered] ---</text>
+    <text x="24" y="330" fill="#34d399">BITB-DOM-001 (+25) : Simulated Window Container with Absolute Positioning</text>
+    <text x="24" y="350" fill="#34d399">BITB-DOM-003 (+35) : Synthetic Address Bar (URL Omnibox Emulation)</text>
+    <text x="24" y="370" fill="#34d399">BITB-DOM-004 (+20) : SSL Padlock SVG Emulation in Synthetic Bar</text>
+    
+    <text x="24" y="396"><tspan class="prompt">maya@lab:~$</tspan></text>
+    <rect x="132" y="384" width="8" height="15" class="cursor"/>
+  </g>
+</svg>
