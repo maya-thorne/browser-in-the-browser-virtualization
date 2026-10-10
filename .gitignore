@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local AI Agent Memory (Strict Zero-Leak Isolation)
+memory/
+.context/
+*.scratch
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment and sensitive tokens
+.env
+.env.*
+*.local
+*.secret
+*.token
+
+# Logs and runtime databases
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
