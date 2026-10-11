@@ -33,6 +33,10 @@
 
 ## 🔬 Libros Blancos Principales y Documentación Técnica
 
+<details open>
+<summary><b>Libros Blancos Principales y Documentación Técnica</b></summary>
+<br>
+
 <table width="100%">
   <thead>
     <tr>
@@ -78,6 +82,7 @@
     </tr>
   </tbody>
 </table>
+</details>
 
 ---
 
@@ -93,6 +98,10 @@
 
 ## 📐 Topología del Sistema y Diagramas
 
+<details open>
+<summary><b>Topología del Sistema y Diagramas</b></summary>
+<br>
+
 ### 1. Jerarquía de Virtualización DOM
 <p align="center">
   <img src="../assets/diagrams/bitb_dom_architecture.svg" alt="BITB DOM Architecture" width="100%" />
@@ -107,10 +116,15 @@
 <p align="center">
   <img src="../assets/diagrams/defense_and_detection_matrix.svg" alt="Defense Matrix" width="100%" />
 </p>
+</details>
 
 ---
 
 ## ⚡ Guía de Inicio Rápido
+
+<details open>
+<summary><b>Guía de Inicio Rápido</b></summary>
+<br>
 
 ```bash
 # 1. Run static heuristic scanner on target web application
@@ -122,6 +136,7 @@ python src/frame_security_auditor.py --file references/bitb_templates/windows_ch
 # 3. Execute full unit test suite
 python -m unittest discover -s tests -p "test_*.py"
 ```
+</details>
 
 ---
 

@@ -33,6 +33,10 @@
 
 ## 🔬 Zentrale Whitepaper & Technische Dokumentation
 
+<details open>
+<summary><b>Zentrale Whitepaper & Technische Dokumentation</b></summary>
+<br>
+
 <table width="100%">
   <thead>
     <tr>
@@ -78,6 +82,7 @@
     </tr>
   </tbody>
 </table>
+</details>
 
 ---
 
@@ -93,6 +98,10 @@
 
 ## 📐 Systemtopologie & Architekturdiagramme
 
+<details open>
+<summary><b>Systemtopologie & Architekturdiagramme</b></summary>
+<br>
+
 ### 1. DOM-Virtualisierungshierarchie
 <p align="center">
   <img src="../assets/diagrams/bitb_dom_architecture.svg" alt="BITB DOM Architecture" width="100%" />
@@ -107,10 +116,15 @@
 <p align="center">
   <img src="../assets/diagrams/defense_and_detection_matrix.svg" alt="Defense Matrix" width="100%" />
 </p>
+</details>
 
 ---
 
 ## ⚡ Schnellstart
+
+<details open>
+<summary><b>Schnellstart</b></summary>
+<br>
 
 ```bash
 # 1. Run static heuristic scanner on target web application
@@ -122,6 +136,7 @@ python src/frame_security_auditor.py --file references/bitb_templates/windows_ch
 # 3. Execute full unit test suite
 python -m unittest discover -s tests -p "test_*.py"
 ```
+</details>
 
 ---
 

@@ -37,6 +37,10 @@ This repository provides an enterprise systems architecture analysis, code-level
 
 ## 🔬 Core Whitepapers & Technical Documentation
 
+<details open>
+<summary><b>📄 View Core Whitepapers &amp; Forensic Dissection Registry (3 Papers)</b></summary>
+<br>
+
 <table width="100%">
   <thead>
     <tr>
@@ -82,6 +86,7 @@ This repository provides an enterprise systems architecture analysis, code-level
     </tr>
   </tbody>
 </table>
+</details>
 
 ---
 
@@ -97,6 +102,10 @@ This repository provides an enterprise systems architecture analysis, code-level
 
 ## 📐 Systems Topology & Architecture Diagrams
 
+<details open>
+<summary><b>📐 View 3 Interactive Architecture &amp; Execution Topologies</b></summary>
+<br>
+
 ### 1. DOM Virtualization Hierarchy & Stacking Model
 <p align="center">
   <img src="./docs/assets/diagrams/bitb_dom_architecture.svg" alt="BITB DOM Architecture" width="100%" />
@@ -111,20 +120,30 @@ This repository provides an enterprise systems architecture analysis, code-level
 <p align="center">
   <img src="./docs/assets/diagrams/defense_and_detection_matrix.svg" alt="Defense Matrix" width="100%" />
 </p>
+</details>
 
 ---
 
 ## ⚙️ Core Engineering Modules (`src/`)
+
+<details>
+<summary><b>⚙️ View Core Forensic Modules &amp; Verification Status</b></summary>
+<br>
 
 | Module Path | Primary Architecture & Forensic Responsibility | Verification Status |
 | :--- | :--- | :---: |
 | [`src/bitb_detector.py`](./src/bitb_detector.py) | Pure-Python static & heuristic scanner detecting synthetic titlebars, fake Omniboxes, and draggable coordinate loops. | **Verified (100%)** |
 | [`src/frame_security_auditor.py`](./src/frame_security_auditor.py) | Audits web server HTTP response headers for strict CSP `frame-ancestors 'none'` and legacy `X-Frame-Options` defense. | **Verified (100%)** |
 | [`src/virtual_browser_emulator.py`](./src/virtual_browser_emulator.py) | Mathematical emulator testing coordinate boundary traps, clipping anomalies, and physical multi-monitor escape limits. | **Verified (100%)** |
+</details>
 
 ---
 
 ## ⚡ Quickstart & CLI Usage
+
+<details open>
+<summary><b>⚡ Quickstart &amp; Execution Commands</b></summary>
+<br>
 
 ### 1. Scan Web Application for BITB Artifacts
 ```bash
@@ -144,10 +163,15 @@ python src/frame_security_auditor.py --file references/bitb_templates/windows_ch
 ```bash
 python -m unittest discover -s tests -p "test_*.py" -v
 ```
+</details>
 
 ---
 
 ## 📁 Repository Directory Structure
+
+<details>
+<summary><b>📁 View Repository Directory Tree &amp; Component Inventory</b></summary>
+<br>
 
 ```
 browser-in-the-browser-virtualization/
@@ -168,6 +192,7 @@ browser-in-the-browser-virtualization/
 ├── LICENSE                    # 📜 Maya Thorne Systems & Security Research License (MT-SRL)
 └── README.md                  # 🌟 First-viewport master showcase
 ```
+</details>
 
 ---
 

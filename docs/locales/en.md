@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <strong>Client-Side DOM Virtualization &bull; Chromium --app UI Stripping &bull; Heuristic Detection Engine &bull; Defense Architecture</strong>
+  <strong>Client-Side DOM Virtualization • Chromium --app UI Stripping • Heuristic Detection Engine • Defense Architecture</strong>
 </p>
 
 <p align="center">
@@ -29,18 +29,20 @@
 
 **Browser-in-the-Browser (BITB)** is an advanced web-based client-side UI spoofing technique that virtualizes a fake operating system popup window inside a webpage's Document Object Model (DOM). By replicating the native title bar, window controls, and synthetic address bar (Omnibox) with trusted domain text and SSL padlock icons, BITB bypasses visual URL inspection.
 
-This repository provides an end-to-end systems architecture analysis, code-level forensic teardown, automated static heuristic scanner, defensive HTTP header auditor, and physical coordinate verification engine.
-
 ---
 
 ## 🔬 Core Whitepapers & Technical Documentation
+
+<details open>
+<summary><b>Core Whitepapers & Technical Documentation</b></summary>
+<br>
 
 <table width="100%">
   <thead>
     <tr>
       <th width="6%" align="center">#</th>
       <th width="30%" align="left">📄 Document / Whitepaper</th>
-      <th width="54%" align="left">🔬 Core Scope &amp; Forensic Coverage</th>
+      <th width="54%" align="left">🔬 Core Scope & Forensic Coverage</th>
       <th width="10%" align="center">📦 Format</th>
     </tr>
   </thead>
@@ -52,7 +54,7 @@ This repository provides an end-to-end systems architecture analysis, code-level
         <code>BITB_DOM_<wbr>VIRTUALIZATION_<wbr>AND_CODE_TEARDOWN.md</code>
       </td>
       <td>
-        <strong>mr.d0x BITB Framework Dissection</strong>: Line-by-line teardown of DOM structure, CSS stacking context elevation (<code>z-index: 9999</code>), draggable coordinate physics (<code>mousedown ➔ mousemove</code>), and iframe credential embedding.
+        mr.d0x BITB Framework Dissection: Line-by-line teardown of DOM structure, CSS stacking context elevation (z-index: 9999), draggable coordinate physics (mousedown ➔ mousemove), and iframe credential embedding.
       </td>
       <td align="center"><strong>Markdown</strong></td>
     </tr>
@@ -63,23 +65,24 @@ This repository provides an end-to-end systems architecture analysis, code-level
         <code>CHROMIUM_APP_<wbr>MODE_INTERFACE_<wbr>SPOOFING.md</code>
       </td>
       <td>
-        <strong>UI Stripping &amp; LNK Masquerading</strong>: Mechanics of the <code>--app</code> flag, total Omnibox and tab strip elimination, weaponized desktop shortcut structures, and Office/Teams masquerading telemetry.
+        UI Stripping & LNK Masquerading: Mechanics of the --app flag, total Omnibox and tab strip elimination, weaponized desktop shortcut structures, and Office/Teams masquerading telemetry.
       </td>
       <td align="center"><strong>Markdown</strong></td>
     </tr>
     <tr>
       <td align="center"><strong>3</strong></td>
       <td>
-        🛡️ <strong><a href="../whitepapers/DEFENSE_AND_DETECTION_ENGINEERING.md">Defense &amp; Detection Matrix</a></strong><br>
+        🛡️ <strong><a href="../whitepapers/DEFENSE_AND_DETECTION_ENGINEERING.md">Defense & Detection Matrix</a></strong><br>
         <code>DEFENSE_AND_<wbr>DETECTION_<wbr>ENGINEERING.md</code>
       </td>
       <td>
-        <strong>4-Tier Enterprise Defense-in-Depth</strong>: <code>Content-Security-Policy: frame-ancestors 'none'</code>, JavaScript frame-busting traps, DOM MutationObserver heuristics, and Sysmon/Sigma telemetry rulesets.
+        4-Tier Enterprise Defense-in-Depth: Content-Security-Policy: frame-ancestors 'none', JavaScript frame-busting traps, DOM MutationObserver heuristics, and Sysmon/Sigma telemetry rulesets.
       </td>
       <td align="center"><strong>Markdown</strong></td>
     </tr>
   </tbody>
 </table>
+</details>
 
 ---
 
@@ -95,12 +98,16 @@ This repository provides an end-to-end systems architecture analysis, code-level
 
 ## 📐 Systems Topology & Architecture Diagrams
 
+<details open>
+<summary><b>Systems Topology & Architecture Diagrams</b></summary>
+<br>
+
 ### 1. DOM Virtualization Hierarchy
 <p align="center">
   <img src="../assets/diagrams/bitb_dom_architecture.svg" alt="BITB DOM Architecture" width="100%" />
 </p>
 
-### 2. Chromium `--app` Execution Pipeline
+### 2. Chromium --app Execution Pipeline
 <p align="center">
   <img src="../assets/diagrams/chromium_app_mode_flow.svg" alt="Chromium App Mode Flow" width="100%" />
 </p>
@@ -109,10 +116,15 @@ This repository provides an end-to-end systems architecture analysis, code-level
 <p align="center">
   <img src="../assets/diagrams/defense_and_detection_matrix.svg" alt="Defense Matrix" width="100%" />
 </p>
+</details>
 
 ---
 
 ## ⚡ Quickstart & Tool Usage
+
+<details open>
+<summary><b>Quickstart & Tool Usage</b></summary>
+<br>
 
 ```bash
 # 1. Run static heuristic scanner on target web application
@@ -124,6 +136,7 @@ python src/frame_security_auditor.py --file references/bitb_templates/windows_ch
 # 3. Execute full unit test suite
 python -m unittest discover -s tests -p "test_*.py"
 ```
+</details>
 
 ---
 
